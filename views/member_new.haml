@@ -1,0 +1,85 @@
+!!!5
+
+%html
+  %head
+    %script{:src => '/js/jquery-1.8.min.js'}
+    %script{:src => '/js/bootstrap.min.js'}
+    %script{:src => '/js/bootstrap-modal.js'}
+    %script{:src => '/js/bootstrap-transition.js'}
+    %script{:src => '/js/bootstrap-alert.js'}
+    %script{:src => '/js/membernew.js'}
+    %link{:rel => 'stylesheet', :href => '/styles/index.css'}
+    %link{:rel => 'stylesheet', :href => '/styles/bootstrap.min.css'}
+  %body.bg
+  
+    = haml :header
+    #team-add-panel.modal.hide.fade
+      .modal-header Add team
+      .modal-body 
+        %form.form-horizontal{:action => '/team/new', :method => 'post'}
+          .control-group 
+            .control-label Name
+            .controls 
+              %input#team_name.span3{:type => "text", :name => 'team_name',:required => true}
+      .modal-footer
+        %a.btn.btn-primary{:href => 'javascript:addTeam()'} Save
+        %a.btn{:href => '#','data-dismiss' => "modal"} Close
+
+    .container
+      .row{:style => 'background-image: url("/img/bg.png");box-shadow: -2px 4px 5px rgba(0,0,0,.5);'}
+        = haml :leftside
+
+        .span9.maincontent{:style => 'margin-left:0px;background-color:#FFFFFF;width:80%;min-height:300px;'}
+          .title Add members
+          .container-fluid{:style => 'margin:10px;padding:0px;',:class => "form-horizontal"}
+            .row-fluid
+              .span12
+                .hide.fade.in.alert.alert-error#atf
+                  %a.close{'data-dismiss' => 'alert'}×
+                  Add team failure !
+                .hide.fade.in.alert.alert-success#ats
+                  %a.close{'data-dismiss' => 'alert'}×
+                  Add team successed !
+            .row-fluid 
+              .span12
+                %form{:action => '/member/new', :method => 'post'}
+                  .control-group 
+                    .control-label Team
+                    .controls 
+                      %select.span3{:name => 'user[team]'}
+                        -@teams.each do |team|
+                          %option{:value => team.id}= team.name
+                      %input{:type => 'checkbox', :style => 'margin-top:0px;'} &nbsp;is lead ?
+                      %a{:href=>"javascript:showAddTeamPanel()"} Add Team
+                  
+                  .control-group 
+                    .control-label Name
+                    .controls 
+                      %input.span3{:type => "text", :name => 'user[name]'}
+                  .control-group 
+                    .control-label Username
+                    .controls 
+                      %input.span3{:type => "text", :name => 'user[username]'}
+                  .control-group 
+                    .control-label Password
+                    .controls 
+                      %input.span3{:type => "text", :name => 'user[password]'}
+                  .control-group 
+                    .control-label Phone
+                    .controls 
+                      %input.span3{:type => "text", :name => 'user[phone]'}
+                  .control-group 
+                    .control-label QQ
+                    .controls 
+                      %input.span3{:type => "text", :name => 'user[qq]'}
+                  .control-group 
+                    .control-label Email
+                    .controls 
+                      %input.span3{:type => "text", :name => 'user[email]'}
+                  .control-group 
+                    .controls
+                      %input{:type => 'submit', :class => 'btn btn-small btn-primary', :value => 'Submit'}
+            
+    .container{:style => 'margin-top:20px;'}
+      .row 
+        %span12 

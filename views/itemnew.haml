@@ -1,0 +1,66 @@
+!!!5
+
+%html
+  %head
+<<<<<<< HEAD
+    %script{:src => '/js/jquery-1.8.min.js'}
+    %script{:src => '/js/bootstrap.min.js'}
+    %link{:rel => 'stylesheet', :href => '/styles/index.css'}
+    %link{:rel => 'stylesheet', :href => '/styles/bootstrap.min.css'}
+=======
+    %script{:src => 'http://juo/js-lib/jquery-1.9.1.min.js'}
+    %script{:src => 'http://juo/js-lib/bootstrap/js/bootstrap.min.js'}
+    %link{:rel => 'stylesheet', :href => '/styles/index.css'}
+    %link{:rel => 'stylesheet', :href => 'http://juo/js-lib/bootstrap/css/bootstrap.min.css'}
+>>>>>>> 50c47b082ce838e7a4b047a02c1cf37636d64f35
+  %body.bg
+  
+    = haml :header
+
+    .container
+<<<<<<< HEAD
+      .row{:style => 'background-image: url("/img/bg.png");box-shadow: -2px 4px 5px rgba(0,0,0,.5);'}
+=======
+      .row{:style => 'background-image: url("/images/bg.png");box-shadow: -2px 4px 5px rgba(0,0,0,.5);'}
+>>>>>>> 50c47b082ce838e7a4b047a02c1cf37636d64f35
+        = haml :leftside
+
+        .span9.maincontent{:style => 'margin-left:0px;background-color:#FFFFFF;width:80%;min-height:300px;'}
+          .title= "Add #{@date} work plan"
+          .container-fluid{:style => 'margin:10px;padding:0px;',:class => "form-horizontal"}
+            .row-fluid 
+              .span12
+                %form{:action => '/reportitem/new', :method => 'post'}
+                  .control-group 
+                    .control-label Date
+                    .controls 
+                      %input.input-xlarge{:type => "text", :name => 'item[date]', :value => @date, :readOnly => true}
+                  %input.input-xlarge{:type => "hidden", :name => 'item[report]', :value => @report._id}
+                  %input.input-xlarge{:type => "hidden", :name => 'item[author]', :value => @auth._id}
+                  .control-group 
+                    .control-label Author
+                    .controls 
+                      %input.input-xlarge{:type => "text", :value => @auth.name, :disabled => 'disabled'}
+                  .control-group 
+                    .control-label Content
+                    .controls 
+                      %textarea.input-xlarge{:rows => '6', :name => 'item[plan]', :cols => 80}
+                  .control-group 
+                    .control-label Complete
+                    .controls 
+                      %textarea.input-xlarge{:rows => '6', :name => 'item[complete]', :cols => 80} All complete
+                  .control-group 
+                    .controls
+                      %input{:type => 'submit', :class => 'btn btn-small btn-primary', :value => 'Submit'}
+
+            
+    .container{:style => 'margin-top:20px;'}
+      .row 
+<<<<<<< HEAD
+        %span12 
+=======
+        %span12 
+            
+
+        
+>>>>>>> 50c47b082ce838e7a4b047a02c1cf37636d64f35

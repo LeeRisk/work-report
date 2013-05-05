@@ -1,0 +1,96 @@
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [03/May/2013 12:57:18] "HEAD / " 302 - 0.0092
+127.0.0.1 - - [03/May/2013 12:57:37] "GET / " 302 - 0.0027
+127.0.0.1 - - [03/May/2013 12:57:37] "GET /login " 200 311 0.0097
+127.0.0.1 - - [03/May/2013 12:57:37] "GET /favicon.ico " 302 - 0.0025
+127.0.0.1 - - [03/May/2013 12:57:37] "GET /login " 200 311 0.0074
+192.168.0.124 - - [03/May/2013 12:57:45] "GET /login " 200 311 0.0085
+192.168.0.124 - - [03/May/2013 12:57:45] "GET /favicon.ico " 302 - 0.0024
+192.168.0.124 - - [03/May/2013 12:57:45] "GET /login " 200 311 0.0068
+192.168.0.124 - - [03/May/2013 12:57:47] "GET /login " 200 311 0.0091
+192.168.0.124 - - [03/May/2013 12:57:47] "GET /favicon.ico " 302 - 0.0018
+192.168.0.124 - - [03/May/2013 12:57:47] "GET /login " 200 311 0.0068
+192.168.0.124 - - [03/May/2013 12:57:48] "GET /login " 200 311 0.0112
+192.168.0.124 - - [03/May/2013 12:57:48] "GET /favicon.ico " 302 - 0.0026
+192.168.0.124 - - [03/May/2013 12:57:48] "GET /login " 200 311 0.0074
+192.168.0.124 - - [03/May/2013 12:57:48] "GET /login " 200 311 0.0082
+192.168.0.124 - - [03/May/2013 12:57:48] "GET /favicon.ico " 302 - 0.0021
+[ pid=27381 thr=140165241026304 file=ext/nginx/HelperAgent.cpp:923 time=2013-05-03 12:57:48.936 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+192.168.0.124 - - [03/May/2013 12:57:48] "GET /login " 200 311 0.0426
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+192.168.0.124 - - [03/May/2013 12:57:49] "GET /login " 200 311 0.0217
+192.168.0.124 - - [03/May/2013 12:57:49] "GET /login " 200 311 0.0073
+192.168.0.124 - - [03/May/2013 12:57:49] "GET /login " 200 311 0.0096
+192.168.0.124 - - [03/May/2013 12:57:49] "GET /favicon.ico " 302 - 0.0025
+192.168.0.124 - - [03/May/2013 12:57:49] "GET /login " 200 311 0.0139
+192.168.0.124 - - [03/May/2013 12:57:49] "GET /favicon.ico " 302 - 0.0027
+192.168.0.124 - - [03/May/2013 12:57:49] "GET /login " 200 311 0.0069
+192.168.0.142 - - [03/May/2013 12:58:01] "GET / " 302 - 0.0018
+192.168.0.142 - - [03/May/2013 12:58:01] "GET /login " 200 311 0.0064
+192.168.0.142 - - [03/May/2013 12:58:02] "GET /favicon.ico " 302 - 0.0015
+192.168.0.142 - - [03/May/2013 12:58:02] "GET /login " 200 311 0.0061
+192.168.0.142 - - [03/May/2013 12:58:05] "POST /login " 302 - 0.0085
+192.168.0.142 - - [03/May/2013 12:58:05] "GET / " 200 3219 0.0661
+192.168.0.142 - - [03/May/2013 12:58:05] "GET /favicon.ico " 302 - 0.0015
+192.168.0.142 - - [03/May/2013 12:58:05] "GET /login " 200 311 0.0096
+192.168.0.168 - - [03/May/2013 14:22:48] "GET / " 302 - 0.0019
+192.168.0.168 - - [03/May/2013 14:22:48] "GET /login " 200 311 0.0072
+attack prevented by Rack::Protection::SessionHijacking
+192.168.0.168 - - [03/May/2013 14:22:49] "GET /favicon.ico " 302 - 0.0019
+192.168.0.168 - - [03/May/2013 14:23:05] "POST /login " 302 - 0.0055
+192.168.0.168 - - [03/May/2013 14:23:05] "GET / " 200 2639 0.0466
+attack prevented by Rack::Protection::SessionHijacking
+192.168.0.168 - - [03/May/2013 14:23:05] "GET /favicon.ico " 302 - 0.0028
+192.168.0.168 - - [03/May/2013 14:26:17] "GET / " 302 - 0.0017
+192.168.0.168 - - [03/May/2013 14:26:17] "GET /login " 200 311 0.0075
+192.168.0.168 - - [03/May/2013 14:26:27] "POST /login " 302 - 0.0056
+192.168.0.168 - - [03/May/2013 14:26:27] "GET / " 200 2639 0.0780
+192.168.0.168 - - [03/May/2013 14:26:29] "GET /teamview " 200 6697 0.0618
+192.168.0.168 - - [03/May/2013 14:26:36] "GET /report/new " 200 4233 0.0831
+192.168.0.168 - - [03/May/2013 14:27:31] "GET /report/new " 302 - 0.0018
+192.168.0.168 - - [03/May/2013 14:27:31] "GET /login " 200 311 0.0069
+192.168.0.168 - - [03/May/2013 14:27:32] "GET /favicon.ico " 302 - 0.0018
+192.168.0.168 - - [03/May/2013 14:27:32] "GET /login " 200 311 0.0112
+192.168.0.168 - - [03/May/2013 14:27:37] "POST /login " 302 - 0.0049
+192.168.0.168 - - [03/May/2013 14:27:37] "GET / " 200 2639 0.0481
+192.168.0.168 - - [03/May/2013 14:27:37] "GET /favicon.ico " 302 - 0.0019
+192.168.0.168 - - [03/May/2013 14:27:38] "GET /login " 200 311 0.0410
+192.168.0.168 - - [03/May/2013 14:27:39] "GET /report/new " 200 4233 0.0468
+192.168.0.168 - - [03/May/2013 14:27:40] "GET /favicon.ico " 302 - 0.0018
+192.168.0.168 - - [03/May/2013 14:27:40] "GET /login " 200 311 0.0115
+192.168.0.168 - - [03/May/2013 14:27:45] "GET /teamview " 200 6697 0.0907
+192.168.0.168 - - [03/May/2013 14:27:45] "GET /favicon.ico " 302 - 0.0019
+192.168.0.168 - - [03/May/2013 14:27:45] "GET /login " 200 311 0.0066
+192.168.0.168 - - [03/May/2013 14:27:50] "GET /teamview/2 " 200 12288 0.0741
+192.168.0.168 - - [03/May/2013 14:27:50] "GET /favicon.ico " 302 - 0.0019
+192.168.0.168 - - [03/May/2013 14:27:50] "GET /login " 200 311 0.0329
+192.168.0.168 - - [03/May/2013 14:27:53] "GET /teamview/1 " 200 21727 0.1201
+192.168.0.168 - - [03/May/2013 14:27:53] "GET /favicon.ico " 302 - 0.0019
+192.168.0.168 - - [03/May/2013 14:27:53] "GET /login " 200 311 0.0341
+192.168.0.168 - - [03/May/2013 14:28:30] "GET /report/edit/2013-04-22/517cc30ebb31a52202000001 " 200 4456 0.0518
+192.168.0.168 - - [03/May/2013 14:28:30] "GET /favicon.ico " 302 - 0.0015
+192.168.0.168 - - [03/May/2013 14:28:30] "GET /login " 200 311 0.0078
+192.168.0.168 - - [03/May/2013 14:28:36] "POST /reportitem/edit " 302 - 0.0122
+192.168.0.168 - - [03/May/2013 14:28:36] "GET /teamview?order=1 " 200 6697 0.0937
+192.168.0.168 - - [03/May/2013 14:28:37] "GET /favicon.ico " 302 - 0.0015
+192.168.0.168 - - [03/May/2013 14:28:37] "GET /login " 200 311 0.0074
+192.168.0.168 - - [03/May/2013 14:28:42] "GET /teamview/2 " 200 12288 0.1046
+192.168.0.168 - - [03/May/2013 14:28:42] "GET /favicon.ico " 302 - 0.0019
+192.168.0.168 - - [03/May/2013 14:28:42] "GET /login " 200 311 0.0101
+192.168.0.168 - - [03/May/2013 14:28:44] "GET /teamview/1 " 200 21734 0.1361
+192.168.0.168 - - [03/May/2013 14:28:44] "GET /favicon.ico " 302 - 0.0020
+192.168.0.168 - - [03/May/2013 14:28:44] "GET /login " 200 311 0.0092
