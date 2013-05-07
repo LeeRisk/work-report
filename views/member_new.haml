@@ -46,10 +46,10 @@
                   .control-group 
                     .control-label Team
                     .controls 
-                      %select.span3{:name => 'user[team]'}
+                      %select#team-select.span3{:name => 'user[team]', :onchange => 'changeLeadParamIfExists(this)'}
                         -@teams.each do |team|
                           %option{:value => team.id}= team.name
-                      %input{:type => 'checkbox', :style => 'margin-top:0px;'} &nbsp;is lead ?
+                      %input{:type => 'checkbox', :style => 'margin-top:0px;', :onclick => "setLeadParam(this)"} &nbsp;is lead ?
                       %a{:href=>"javascript:showAddTeamPanel()"} Add Team
                   
                   .control-group 

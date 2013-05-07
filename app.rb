@@ -77,8 +77,10 @@ end
 
 # => Process request of add memebers for a ateam
 post '/member/new' do
-  User.create params[:user]
-  redirect '/'
+  user = User.new params[:user]
+  user.password = Digest::MD5.hexdigest(user.password)
+  user.save
+  redirect '/member/new'
 end
 
 # => Process request of edit of add a reportitem to given report

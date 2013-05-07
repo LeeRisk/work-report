@@ -6,23 +6,17 @@
     background: linear-gradient(to bottom, #F8FAF9 0%,#D1D2D5 100%);
     border-bottom: 1px solid #DDDDDD;
     color: #55585D;
-<<<<<<< HEAD
     font: 12px "Cuprum",Helvetica,Arial,sans-serif;
     height: 18px;
-=======
     font: 14px "Cuprum",Helvetica,Arial,sans-serif;
     height: 20px;
->>>>>>> 50c47b082ce838e7a4b047a02c1cf37636d64f35
     padding: 3px 0 3px 10px;
     text-shadow: 1px -1px 1px rgba(220,220,220,.3);
 }
 .panel .panel-content { padding: 10px; }
 .header-title {
-<<<<<<< HEAD
     background: url('../img/header-bg.png') repeat-x;
-=======
     background: url('../images/header-bg.png') repeat-x;
->>>>>>> 50c47b082ce838e7a4b047a02c1cf37636d64f35
     color: white;
     height: 77px;
     margin-bottom: 20px;
@@ -44,11 +38,8 @@
 
 .menuside { }
 .menuside .title {
-<<<<<<< HEAD
     background: url('../img/menu-left-bg.png');
-=======
     background: url('../images/menu-left-bg.png');
->>>>>>> 50c47b082ce838e7a4b047a02c1cf37636d64f35
     border-bottom: 1px solid #21282D;
     border-top: 1px solid #21282D;
     color: #FFFFFF;
@@ -87,7 +78,4 @@ ul.menu li a { display: block; padding: 10px 0 10px 10px; text-shadow: 0 0 1px #
 ul.menu li i { block; display; margin-top: 3px; }
 ul.menu li:hover { background-color: #455057; }
 ul.menu { list-style: none; margin-left: 0; }
-<<<<<<< HEAD
 ul.user-list{list-style: none;margin-left: 0px;}
-=======
->>>>>>> 50c47b082ce838e7a4b047a02c1cf37636d64f35

@@ -24,45 +24,30 @@
           .title Home
           .container-fluid{:style => 'margin:10px;padding:0px;'}
             .row-fluid
-              - unless @today_plan.nil?
-                .span9
-            - unless @today_plan.nil?
-              .row-fluid
-                .span12
-                  .panel.span4
-                    .panel-title Today plan
-                    .panel-content= @today_plan.plan
-                  .panel.span4
-                    .panel-title Note of this week workplan
-                    .panel-content= @last_rep.note
-                .row-fluid
-                  .span9
-                    .panel.span4
-                      .panel-title Yesterday completed
-                      .panel-content= @today_plan.plan
-              - else
-                .span9
-                  .alert.alert-info Please contact the team leader to create a week's work report
               .span2.panel
-                .panel-title Team members
+                .panel-title Members
                 .panel-content
                   %ul.user-list
                     - @auth.team.members.each do |mem|
                       %li
                         %i.icon-user
                         =mem.name
-
-            
-
-    = haml :bottom
-              .row-fluid
-                .span12
-                  .panel.span4
-                    .panel-title Yesterday completed
-                    .panel-content= @today_plan.plan
-            - else
-              .row-fluid
-                .span12
+              - unless @today_plan.nil?
+                .row-fluid
+                  .span9
+                    .panel.span3
+                      .panel-title Today plan
+                      .panel-content= @today_plan.plan
+                    .panel.span3
+                      .panel-title Note of this week workplan
+                      .panel-content= @last_rep.note
+                  .row-fluid
+                    .span9
+                      .panel.span3
+                        .panel-title Yesterday completed
+                        .panel-content= @today_plan.plan
+              - else
+                .span9
                   .alert.alert-info Please contact the team leader to create a week's work report
 
     = haml :bottom
