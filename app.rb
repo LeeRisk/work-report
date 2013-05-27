@@ -6,7 +6,8 @@ require 'ap'
 require './models'
 require 'pry'
 
-Mongoid.load!("./mongoid.yml", :development)
+env = ENV['RACK_ENV'] || :development
+Mongoid.load!("./mongoid.yml", env)
 
 enable :sessions
 
