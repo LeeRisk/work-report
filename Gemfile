@@ -1,5 +1,6 @@
 #source "http://ruby.taobao.org/"
 source "https://rubygems.org"
+ruby '1.9.3'
 gem 'sinatra'
 gem 'mongoid'
 gem 'haml'
