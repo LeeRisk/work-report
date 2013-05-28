@@ -2,6 +2,6 @@
 使用Sinatra，mongoid，haml实现
 ## 演示地址
 
-http://sinatra-mongoid.herokuapp.com
-user: admin
+http://sinatra-mongoid.herokuapp.com<br/>
+user: admin<br/>
 password: password
