@@ -2,9 +2,12 @@ require 'sinatra'
 require 'sinatra/json'
 require 'mongoid'
 require 'haml'
+require 'ap'
 require './models'
+require 'pry'
 
-Mongoid.load!("./mongoid.yml", :development)
+env = ENV['RACK_ENV'] || :development
+Mongoid.load!("./mongoid.yml", env)
 
 enable :sessions
 
@@ -27,6 +30,7 @@ end
 
 # => Process login
 post '/login' do
+  #binding.pry
   u = User.authenticate(params[:username], params[:password])
   if u
     session[:auth] = u
